@@ -37,7 +37,5 @@ Route::get('/gallery', function () {
 });
 
 Route::resource('/contacts', ContactController::class); 
-    return view ('Contacts', [
-        "title" => "Contacts"
-    ]);
+    
 
