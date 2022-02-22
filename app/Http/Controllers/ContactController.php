@@ -36,14 +36,19 @@ class ContactController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
+
     {
-        gitdd($request->all());
+
+        dd($request->all());
+
         $contact = Contact::create($request->all());
-        $contact->save(); 
+        $contact->save();
 
-        return redirect('contacts'); 
+ 
+
+        return redirect('contacts');
+
     }
-
     /**
      * Display the specified resource.
      *
